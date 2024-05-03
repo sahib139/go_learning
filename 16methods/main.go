@@ -30,7 +30,8 @@ func (u User) voteIllegible() bool {
 }
 
 func (u User) changeEmail(newEmail string) {
-	u.Email = newEmail // this will be ineffective since it passes the copy of user , and in that we change
+	u.Email = newEmail 
+	// this will be ineffective since it passes the copy of user , and in that we change
 	// email value and hence it don't reflect in the original user object.
 }
 
